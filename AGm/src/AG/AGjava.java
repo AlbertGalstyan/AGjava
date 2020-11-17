@@ -17,9 +17,9 @@ public class AGjava {
             } else {
                 System.out.println("You entered even number");
             }
-            Scanner wordInput = new Scanner(System.in);
+
             System.out.println("Enter a word to view REVERSED, LOWERCASED and CONCATED");
-            String sentence = wordInput.next();
+            String sentence = user.next();
             System.out.println("You entered " + sentence);
             StringBuilder str = new StringBuilder(sentence);
             System.out.println("reversed " + str.reverse());
