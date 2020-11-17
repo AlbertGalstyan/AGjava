@@ -8,6 +8,7 @@ public class AGjava {
         Scanner user = new Scanner(System.in);
         System.out.println("Please enter number");
         String input = user.next();
+        StringBuilder str1 = new StringBuilder(input);
         try {
             int number = Integer.parseInt(input);
 
@@ -25,6 +26,8 @@ public class AGjava {
             System.out.println("reversed " + str.reverse());
             System.out.println("lovercased " + sentence.toLowerCase());
             System.out.println("concated with number enterd above " + sentence + input);
+            str.reverse();
+            System.out.println("concated with number enterd above delated first CHAR " + str1.deleteCharAt(0) + str.deleteCharAt(0));
         }
         catch (NumberFormatException e) {
             System.out.println("Please ENTER NUMBER");
